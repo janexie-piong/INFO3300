@@ -1,0 +1,79 @@
+<html><body>
+    <p id="p1">
+    <b>Problem 1: </b>
+        
+        <script>
+        console.log(typeof(true));
+        console.log(typeof(3.4));
+        console.log(typeof("Hello!"));
+        console.log(typeof(Object()));
+        console.log(typeof(console.log));
+        console.log(typeof(undefined));
+        
+        </script>
+    
+    </br>
+    A: Canonical Javascript types are boolean, number, string, object, functions, undefined.
+    
+</br>
+</br>
+    C: Unusal typeof() behavior: 
+</br>
+    Number: Both int and float are number. NaN is alsp a number. </br>
+    Unicode: Unicode is identified as stirng.</br>
+    Classes: Classes in javascript is just object.</br>
+    Functions: Functions are special objeccts.</br>
+    typeof(null) will incorrectly return as an object. Null is not an object.</br>
+    Every object behaves like a dictionary.</br>
+        
+    </ul>
+    </p>
+        
+    <p id="p2">
+    <b>Problem 2:</b>
+            </br>
+                Type coercion means when Javascript tries to coerce one type into another to make two incompatible types compatible.
+            </br>
+                Two examples: </br>
+                console.log(true + "false") gives truefalse; </br>
+                console.log(3 + "2") gives 32.
+            <script>
+                console.log(true + "false");
+                console.log(3 + "2");
+            </script>
+        </p>
+    
+    
+    
+    <p id="p3">
+    <b>Prolem 3:</b>
+    <script>
+        function fact (n){
+                    if (n < 0){
+                        return undefined;
+                    } 
+                    if (n === 0){
+                        return 1;
+                    }
+                    return n * fact(n - 1);
+                }
+        //test 
+        console.log( fact(-2) ); 
+        console.log( fact(0) ); 
+        console.log( fact(1) ); 
+        console.log( fact(5) ); 
+        console.log( fact(12) );
+    </script>
+    </p>
+    
+    
+    <p id="p4">
+        <b>Problem 4:</b> </br>
+        Any late work will receive a 0 score. </br>
+        Each student will receive a total of 5 slip days for use as deadline extensions. </br>
+        We will also drop the lowest two homework scores when computing final class grades.
+    
+    
+    </p>
+    
+    </body></html>
